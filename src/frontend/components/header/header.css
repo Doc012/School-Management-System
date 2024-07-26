@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.logo{
+  background-color: rgb(255, 255, 255);
+  max-width: 10%;
+  padding: 10px;
+  color: rgb(0, 0, 0, 0.8);
+}
+.HomeNavCont{
+  background-color: rgb(255, 255, 255);
+}
+.navList{
+  text-align: center;
+  background-color: rgb(31, 95, 120);
+
+
+}
+.navList ul{
+    height: 38px;
+    padding-top: 10px;
+}
+.navList li{
+  display: inline;
+  /* margin: 5px; */
+}
+.navList a{
+    color: rgb(255, 255, 255);
+    /* background-color: antiquewhite; */
+    margin: 5px;
+    padding: 10px;
+    transition: all ease-in-out 0.5s;
+}
+.navList a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.authBtns{
+  float: right;
+  margin-top: -3.74%;
+  /* background-color: green; */
+  width: 300px;
+}
+.authBtns button{
+    margin: 10px;
+    width: 100px;
+    height: 38px;
+    background-color: rgb(79, 205, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    transition: all ease-in-out 0.3s;
+}
+.authBtns button:hover{
+    background-color: rgb(79, 205, 255, 0.3);
+    color: rgb(255, 255, 255);
+}
