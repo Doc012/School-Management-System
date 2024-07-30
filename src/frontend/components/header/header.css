@@ -12,57 +12,156 @@ body{
   background-position: center;
   background-attachment: fixed;
 }
-.logo{
-  background-color: rgb(255, 255, 255);
-  max-width: 10%;
-  padding: 10px;
-  color: rgb(0, 0, 0, 0.8);
+nav{
+  background-color: rgb(0, 96, 193);
+  /* padding: 10px; */
 }
 .HomeNavCont{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(182, 249, 227);
+  /* padding: 10px; */
+  height: 92px;
 }
-.navList{
-  text-align: center;
-  background-color: rgb(31, 95, 120);
-
-
-}
-.navList ul{
-    height: 38px;
-    padding-top: 10px;
-}
-.navList li{
-  display: inline;
+.logo{
+  background-color: rgb(0, 16, 66);
+  padding: 15px;
   /* margin: 5px; */
+  position: sticky;
+  max-width: 150px;
+  height: 92px;
+
 }
-.navList a{
-    color: rgb(255, 255, 255);
-    /* background-color: antiquewhite; */
-    margin: 5px;
-    padding: 10px;
-    transition: all ease-in-out 0.5s;
+.logo a{
+  color: white;
+
 }
-.navList a:hover{
-    background-color: rgb(255, 255, 255);
-    color: black;
+.navListOne{
+  background-color: rgb(0, 46, 92);
+  /* padding: 10px; */
+  margin-top: -100px;
+  height: 48px;
+  width: 100%;
+  padding-top: 10px;
 }
-.authBtns{
+.navListOne ul{
+  /* display: inline-block; */
+  /* background-color: rgb(0, 255, 60); */
+  /* margin-top: 6px; */
   float: right;
-  margin-top: -3.74%;
-  /* background-color: green; */
-  width: 300px;
+
 }
-.authBtns button{
-    margin: 10px;
-    width: 100px;
-    height: 38px;
-    background-color: rgb(79, 205, 255);
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 50px;
-    transition: all ease-in-out 0.3s;
+.navListOne ul li{
+  display: inline-block;
 }
-.authBtns button:hover{
-    background-color: rgb(79, 205, 255, 0.3);
-    color: rgb(255, 255, 255);
+.navListOne ul li a{
+  padding: 9px 20px;
+  color: rgb(255, 255, 255);
+  /* background-color: #f1f1f1; */
+  height: 100px;
+  transition: 0.5s;
+
+}
+.navListOne ul li i{
+  transition: 0.3s;
+  cursor: pointer;
+  /* background-color: red; */
+  padding: 10px;
+  color: white;
+}
+.navListOne ul li a:hover{
+  color: rgb(126, 126, 126);
+  /* background-color: #f1f1f1; */
+  transition: 0.3s;
+}.navListOne ul li i:hover{
+  color: rgb(126, 126, 126);
+  transition: 0.3s;
+}
+
+
+.navListTwo{
+  /* background-color: rgb(232, 25, 25); */
+  padding: 10px;
+  margin-right: -35%;
+  width: 100%;
+  text-align: center;
+  height: 62px;
+}
+.navListTwo {
+  margin-top: -10px;
+}
+.navListTwo ul{
+  display: inline-block;
+}
+.navListTwo ul li{
+  display: inline-block;
+  align-items: center;
+
+}
+.navListTwo ul li a{
+  padding: 0px 30px ;
+}
+
+
+
+
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  color: rgb(0, 0, 0);
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #3e8e4100;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  /* text-decoration: none;
+  display: block;
+  float: left; */
+}
+
+.dropdown-content ul li{
+  /* background-color: #3e8e41; */
+  width: 100%;
+  padding: 10px 0px;
+}
+.dropdown-content ul li a{
+  margin-left: -80px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content li:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-content:hover{
+  transition: 0.5s;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
 }

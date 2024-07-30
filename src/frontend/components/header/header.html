@@ -2,32 +2,222 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
     <link rel="stylesheet" href="components/header/header.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="components/header/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      #navOne {
+        background-color: rgb(0, 46, 92);
+      }
+      #navOne h4{
+        color: rgb(255, 255, 255);
+      }
+      #secNav{
+        background-color: rgb(233, 233, 233);
+      }
+        /* Custom CSS for centering the second navbar */
+        .navbar-nav-center {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .nav-underline .nav-link:hover {
+          border-bottom: 2px solid rgb(0, 0, 0); /* Default color */
+        }
+        
+        #secNav .nav-item:hover .dropdown-menu{
+          display: block;
+          background-color: rgb(233, 233, 233);
+          transition: all ease-in-out 0.5s;
+
+        }
+        #secNav ul li .nav-link{
+          padding: 0px 20px;
+        }
+        .dropdown-menu li a:hover{
+          background-color: rgb(0, 46, 92);
+          color: white;
+          transition: all ease-in-out 0.3s;
+        }
+        .dropdown-menu li a{
+          transition: all ease-in-out 0.3s;
+        }
+        #firstNav ul li i{
+          color:rgb(255, 255, 255);
+          padding: 13px;
+        }
+        #firstNav ul li i:hover{
+          color: rgb(170, 170, 170);
+          transition: all ease-in-out 0.3s;
+        }
+        #firstNav ul li a:hover{
+          transition: all ease-in-out 0.3s;
+        }
+        nav ul li a:hover{
+          transition: all ease-in-out 0.3s;
+        }
+        #firstNav .nav-link{
+          color: white;
+        }
+        #firstNav .nav-link:hover{
+          color: rgb(170, 170, 170);
+          transition: all ease-in 0.2s;
+        }
+        .dropdown-menu{
+          background-color: rgb(233, 233, 233);
+          border: 0px;
+          transition: all ease-in-out 0.5s;
+        }
+      </style>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="HomeNavCont">
-          <div class="logo">
-            <h1>HSMS</h1>
-          </div>
-          <div class="navList">
-            <ul>
-              <li><a href="#">item1</a></li>
-              <li><a href="#">item2</a></li>
-              <li><a href="#">item3</a></li>
-              <li><a href="#">item4</a></li>
-              <li><a href="#">item5</a></li>
+      <nav id="navOne" class="navbar navbar-expand-lg text-info-emphasis">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h4>
+              School <br />
+              Logo/name
+            </h4>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="firstNav" class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav  ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Student</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Parents and Guardians</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stuff</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
           </div>
-          <div class="authBtns">
-            <button>Sign In</button>
-            <button>Sign Up</button>
+        </div>
+      </nav>
+      <nav id="secNav" class="navbar navbar-expand-lg text-primary-emphasis">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-underline navbar-nav-center">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Study</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Streams</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Events</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Calender</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Noticeboard</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
+
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/384885d02f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Bundle JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
